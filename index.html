@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Project</title>
+
+    <link rel="stylesheet" href="./src/style/global.css">
+    <link rel="stylesheet" href="./src/style/pokedex-left-base.css">
+    <link rel="stylesheet" href="./src/style/pokedex-right-base.css">
+    <link rel="stylesheet" href="./src/style/animation.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pokedex">
+        <!-- Pokedex left base -->
+        <div id="left-base">
+            <div id="top-lights">
+                <div id="blue"></div>
+                <div id="sub-lights">
+                    <div id="red" class="button"></div>
+                    <div id="yellow" class="button"></div>
+                    <div id="green" class="button"></div>
+                </div>
+            </div>
+
+            <div id="left-base1">
+                <div id="screen-container">
+                    <div id="moving-line"></div>
+                    <div id="main-screen">
+                        <div id="pokemon-image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom-container">
+                <div id="round-button"></div>
+
+                <div id="green-screen">
+                    <p id="poke-name"></p>
+                </div>
+
+                <div id="d-pad">
+                    <div id="dx-axis1" class="dx-axis d-button" onclick="sideView()"></div>
+                    <div id="dy-axis">
+                        <div id="d-top" class="d-button" onclick="lastPokemon()"></div>
+                        <div id="d-bottom" class="d-button" onclick="nextPokemon()"></div>
+                    </div>
+                    <div id="dx-axis2" class="dx-axis d-button" onclick="sideView()"></div>
+                </div>
+            </div>
+
+            <!-- Mid cilinder -->
+            <div id="division-container">
+                <div id="pokedex-division">
+                    <div id="inner-division-top"></div>
+                    <div id="inner-division-bottom"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pokedex right base-->
+        <div id="right-base">
+            <div id="base-info">
+                <div id="info-screen" class="text">
+                    <div id="infos">TYPE A POKEMON ID</div>
+                    <div id="poke-id"></div>
+                </div>
+            </div>
+
+            <div id="numpad">
+                <div onclick="numClick(1)" class="numpad-key" id="key1">1</div>
+                <div onclick="numClick(2)" class="numpad-key">2</div>
+                <div onclick="numClick(3)" class="numpad-key">3</div>
+                <div onclick="numClick(4)" class="numpad-key">4</div>
+                <div onclick="numClick(5)" class="numpad-key" id="key2">5</div>
+                <div onclick="numClick(6)" class="numpad-key" id="key3">6</div>
+                <div onclick="numClick(7)" class="numpad-key">7</div>
+                <div onclick="numClick(8)" class="numpad-key">8</div>
+                <div onclick="numClick(9)" class="numpad-key">9</div>
+                <div onclick="numClick(0)" class="numpad-key" id="key4">0</div>
+            </div>
+
+            <div id="wb-container">
+                <div onclick="search()" id='search-btn' class="white-button">Search</div>
+                <div onclick="funcClear()" id='clear-btn' class="white-button">Clear</div>
+            </div>
+
+            <div id="type-container">
+                <div id="display1" class="type-display text"></div>
+                <div id="display2" class="type-display text"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+    <!-- "After page load" animations -->
+    <link rel="stylesheet" href="./src/style/animation.css">    
+</body>
+</html>

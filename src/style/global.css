@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pokedexColor: rgb(220, 10, 45);
+    --black: rgb(0,0,0);
+    --white: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+    body {
+        transform: rotate(90deg);
+        position: relative;
+        top: 125px;
+        margin: 99px;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-image: url(../imgs/cover.png);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#pokedex {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text{
+    animation: fade 3s ease;
+    animation-iteration-count: infinite;
+}

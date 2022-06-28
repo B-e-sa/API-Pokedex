@@ -1,0 +1,220 @@
+#pokedex {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#left-base {
+    display: flex;
+    position: relative;
+    min-width: 450px;
+    min-height: 550px;
+    background-color: var(--pokedexColor);
+    border: 2px solid;
+    border-radius: 8px;
+    border-right: none;
+}
+
+#top-lights {
+    display: flex;
+    height: fit-content;
+}
+
+#blue {
+    width: 65px;
+    height: 65px;
+    margin: 15px;
+    background-color: rgb(39, 171, 255);
+    border: 5px solid rgb(222, 222, 222);
+    border-radius: 32px;
+}
+
+#sub-lights {
+    display: flex;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#yellow { background-color: rgb(255, 244, 118);}
+
+#green { background-color: rgb(175, 224, 185);}
+
+#red {background-color: rgb(220, 10, 45);}
+
+#left-base1 {
+    position: relative;
+    top: 100px;
+}
+
+#screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    width: 275px;
+    height: 250px;
+    position: absolute;
+    right: -155px;
+    border-radius: 7px;
+    border: 2px solid;
+}
+
+/* A "invisible" square on the pokedex bottom-left to make it more faithful */
+#screen-container::after {
+    content: "";
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    bottom: -22px;
+    left: -22px;
+    background-color: var(--pokedexColor);
+    transform:rotate(48deg);
+    border-top: 2px solid;
+}
+
+#main-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    width: 205px;
+    height: 175px;
+    border-radius: 5px;
+}
+
+#moving-line {
+    position: absolute;
+    width: 205px;
+    height: 2px;
+    background-color: rgba(110, 110, 110, 0.5);
+    animation: line 2.5s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#bottom-container {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    bottom: 85px;
+    width: calc(100% - 46px);
+    height: 100%;
+}
+
+#round-button {
+    background-color: var(--black);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 35px;
+}
+
+#green-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #52AE5F;
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid;
+    font-size: 13pt;
+    font-weight: bold;
+    position: relative;
+    top: 12px;
+}
+
+.d-button {
+    background-color: rgb(30, 30, 30);
+}
+
+#d-pad {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.dx-axis {
+    position: relative;
+    bottom: 10px;
+    width: 25px;
+    height: 28px;
+    cursor: pointer;
+}
+
+#dx-axis1 {
+    border-radius: 4px 0 0 4px;
+}
+
+#dx-axis2 {
+    border-radius: 0 4px 4px 0;
+}
+
+#dy-axis {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--black);
+    height: 75px;
+    width: 28px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#d-top {
+    height: 25px;
+    border-radius: 4px 4px;
+    cursor: pointer;
+}
+
+#d-bottom {
+    height: 25px;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+}
+
+#division-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#pokedex-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--pokedexColor);
+    width: 46px;
+    height: 490px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#inner-division-top {
+    height: 40px;
+    border-bottom: 2px solid;
+}
+
+#inner-division-bottom {
+    height: 40px;
+    border-top: 2px solid;
+}
+
+.inner-division {
+    height: 40px;
+}

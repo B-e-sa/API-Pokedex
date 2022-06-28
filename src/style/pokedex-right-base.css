@@ -1,0 +1,108 @@
+#right-base {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pokedexColor);
+    min-width: 450px;
+    min-height: 492px;
+    border: 2px solid;
+}
+
+#base-info { display: flex; }
+
+#info-screen {
+    position: relative;
+    text-align: justify;
+    background-color: var(--black);
+    color: var(--white);
+    width: 360px;
+    height: 130px;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+#poke-id {
+    position: absolute;
+    left: 310px;
+    top: 105px;
+}
+
+#poke-img { width: 180px; }
+
+#numpad {
+    display: grid;
+    margin-top: 25px;
+    grid-template-rows: 44px 44px;
+    grid-template-columns: 72px 72px 72px 72px 72px;
+    cursor: pointer;
+}
+
+.numpad-key {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #28AAFE;
+    border: 1px solid var(--black);
+    color: var(--black);
+    font-family: Verdana, Geneva, Tahoma, monospace;
+    font-size: 17pt;
+}
+
+.numpad-key:active {
+    background-color: #079cff;
+    color: var(--white);
+}
+
+#key1 {border-radius: 4px 0 0 0;}
+
+#key2 {border-radius: 0 4px 0 0;}
+
+#key3 {border-radius: 0 0 0 4px;}
+
+#key4 {border-radius: 0 0 4px 0;}
+
+#wb-container {
+    display: flex;
+    width: 100%;
+    margin: 35px 0 0 85px;
+}
+
+.white-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEDEDE;
+    width: 75px;
+    height: 45px;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.white-button:active {
+    background-color: #c5c5c5;
+}
+
+#type-container {
+    display: flex;
+    width: 360px;
+}
+
+#display1 {
+    margin-right: 62px;
+}
+
+.type-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    width: 150px;
+    height: 45px;
+    border-radius: 4px;
+    margin-top: 35px;
+}

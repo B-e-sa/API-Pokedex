@@ -1,0 +1,10 @@
+@keyframes fade {
+    0% {color: white;}
+    50% {color: rgb(190, 190, 190);}
+    100% {color: white;}
+}
+
+@keyframes line {
+    0% {top: 40px;}
+    100% {top: 207px}
+}
