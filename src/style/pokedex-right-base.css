@@ -82,18 +82,14 @@
     cursor: pointer;
 }
 
-.white-button:active {
-    background-color: #c5c5c5;
-}
+.white-button:active {background-color: #c5c5c5;}
 
 #type-container {
     display: flex;
     width: 360px;
 }
 
-#display1 {
-    margin-right: 62px;
-}
+#display1 {margin-right: 62px;}
 
 .type-display {
     display: flex;
